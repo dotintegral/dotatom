@@ -1,0 +1,27 @@
+"*":
+  editor:
+    invisibles: {}
+    tabLength: 4
+    fontSize: 13
+    preferredLineLength: 120
+    fontFamily: "Ubuntu Mono"
+  core:
+    themes: [
+      "one-dark-ui"
+      "atom-twilight"
+    ]
+    followSymlinks: true
+    disabledPackages: [
+      "autocomplete"
+    ]
+  "exception-reporting":
+    userId: "611e2984-0970-b98c-04c0-bd8cbb7604d9"
+  welcome:
+    showOnStartup: false
+  "autocomplete-plus":
+    confirmCompletion: "tab and enter"
+  "linter-eslint":
+    disableWhenNoEslintrcFileInPath: true
+  linter: {}
+  "file-icons":
+    onChanges: true

@@ -1,0 +1,50 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed.
+ *
+ * If you are unfamiliar with LESS, you can read more about it here:
+ * http://www.lesscss.org
+ */
+
+.tree-view {
+
+}
+
+// style the background and foreground colors on the atom-text-editor-element
+// itself
+atom-text-editor {
+
+}
+
+// To style other content in the text editor's shadow DOM, use the ::shadow
+// expression
+atom-text-editor::shadow .cursor {
+
+}
+
+.tab-bar .tab.active[data-type="TextEditor"] {
+    background-color: #3d3d3d;
+    color: white;
+    opacity: 1.0;
+}
+
+.tab-bar .tab.active[data-type="TextEditor"]:after {
+    border-bottom-color: #3d3d3d;
+}
+
+atom-text-editor.vim-mode.command-mode::shadow .cursor,
+atom-text-editor.vim-mode.operator-pending-mode::shadow .cursor,
+atom-text-editor.vim-mode.visual-mode::shadow .cursor,
+atom-text-editor.vim-mode.command-mode .cursor,
+atom-text-editor.vim-mode.operator-pending-mode .cursor,
+atom-text-editor.vim-mode.visual-mode .cursor,
+atom-text-editor.vim-mode.command-mode::shadow .cursor.blink-off,
+atom-text-editor.vim-mode.operator-pending-mode::shadow .cursor.blink-off,
+atom-text-editor.vim-mode.visual-mode::shadow .cursor.blink-off,
+atom-text-editor.vim-mode.command-mode .cursor.blink-off,
+atom-text-editor.vim-mode.operator-pending-mode .cursor.blink-off,
+atom-text-editor.vim-mode.visual-mode .cursor.blink-off {
+    background-color: #666 !important;
+}
